@@ -8,3 +8,19 @@
     background-size: 360px;
     background-position: right bottom;
 }
+
+.taskModal{
+    display: none;
+     position:fixed; 
+
+}
+ .taskModal1{
+    display: block;
+     position:absolute;
+    left: 50%;
+    top: 50%; 
+    
+transform: translate(-50%,-50%);
+background: white;
+
+ } 
