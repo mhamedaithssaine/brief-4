@@ -21,6 +21,16 @@
     top: 50%; 
     
 transform: translate(-50%,-50%);
-background: white;
 
  } 
+.buttontask{
+   width: 100%;
+   position: relative;
+}
+
+.txttask{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    text-align: left;
+}
