@@ -12,8 +12,7 @@ const taskDate = document.getElementById('task-date');
 const save = document.getElementById("task-save-btn");
 const todo = document.getElementById("to-do-tasks");
 const done = document.getElementById("done-tasks");
-const inprogress = document.getElementById("in-progress-tasks");
-const buttontask =document.querySelector('.buttontask'); 
+const inprogress = document.getElementById("in-progress-tasks"); 
 const uptade = document.getElementById("task-update-btn");
 const delet = document.getElementById("task-delete-btn");
 let i=1 ;
@@ -25,6 +24,8 @@ let i=1 ;
 function oppentask(){
   model.classList.add('taskModal1');
     model.classList.remove('taskModal');
+    document.getElementById("task-delete-btn").style.display = 'none';
+ document.getElementById("task-update-btn").style.display = 'none';
     taskForm.reset(); // Réinitialise le formulaire
 }
 
@@ -34,8 +35,7 @@ openTask.addEventListener('click', () => {
 });
 
 // Masquer les boutons de suppression et de mise à jour au démarrage
-document.getElementById("task-delete-btn").style.display = 'none';
- document.getElementById("task-update-btn").style.display = 'none';
+
 
 // Fermer le formulaire avec "Cancel" ou "Fermer"
 fermer.addEventListener('click', () => {
